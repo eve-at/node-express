@@ -1,0 +1,3 @@
+{
+    "MONGO_DB_URL": "mongodb+srv://nodetest:cTKLdxa2FTva5mAb@cluster0.sny2t62.mongodb.net/?retryWrites=true&w=majority"
+}

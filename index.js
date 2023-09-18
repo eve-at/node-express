@@ -4,12 +4,15 @@ import mongoose from 'mongoose'
 import Router from 'express'
 import Post from './models/Post.js'
 import router from './router.js'
+import fileUpload from 'express-fileupload'
 
 const PORT = config.get('PORT')
 const DB_URL = config.get('MONGO_DB_URL');
 
 const app = express()
 app.use(express.json())
+app.use(express.static('images'))
+app.use(fileUpload({}))
 app.use('/api', router)
 
 async function startApp() {

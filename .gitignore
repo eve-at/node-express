@@ -2,5 +2,6 @@
 node_modules/
 config/developement.json
 config/production.json
+images/*.*
 
 
